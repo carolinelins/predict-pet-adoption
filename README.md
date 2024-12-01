@@ -6,64 +6,56 @@
 
 Final project for **Techniques d'Apprentissage Artificiel**
 
-## Prerequisites
+## English
 
-Before running the project, make sure you have the following installed:
+### Prerequisites
+
+Before running the project, ensure you have the following installed:
 
 - **Conda**: Used to manage the project's virtual environment and dependencies.
 - **Git**: To clone the repository.
 - **Make**: To execute tasks defined in the `Makefile`.
 - **Jupyter Notebook**: To run the notebooks.
 
-## Setup
+### Setup
 
 Follow these steps to set up the project:
 
 1. **Clone the repository**:
-
    ```bash
    git clone https://github.com/yourusername/predict-pet-adoption.git
    cd predict-pet-adoption
    ```
 
 2. **Create and activate the Conda environment**:
-
    You need to create a Conda environment and install all necessary dependencies. Run the following command to create the environment:
-
    ```bash
    make create-environment
    ```
 
-   This command will create a new environment with Python 3.10. Once the environment is created, activate it using:
-
+   Once the environment is created, activate it using:
    ```bash
    conda activate predict-pet-adoption
    ```
 
 3. **Install dependencies**:
-
    After activating the environment, install all the required dependencies using:
-
    ```bash
    make requirements
    ```
 
-   This will install the necessary packages from the `environment.yml` file.
-
 4. **Run the Notebooks**:
-
-   To run the Jupyter notebooks for the data exploration, transformation, and model training steps, run:
-
+   To run the Jupyter notebooks for data exploration, transformation, and model training, run:
    ```bash
    make run-notebooks
    ```
 
    This will execute the following notebooks in order:
-   - `1-data-exploration.ipynb` (Data Exploration)
-   - `2-data-transformation.ipynb` (Data Preprocessing and Feature Engineering)
-   - `3-model-training.ipynb` (Training the Models and Evaluating Performance)
+   - `1-data-exploration.ipynb`
+   - `2-data-transformation.ipynb`
+   - `3-model-training.ipynb`
 
-## Project Organization
+### Project Organization
 
 ```
 ├── LICENSE            <- Open-source license if one is chosen
@@ -75,24 +67,155 @@ Follow these steps to set up the project:
 │
 ├── docs               <- A default mkdocs project; see www.mkdocs.org for details
 │
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
+├── notebooks          <- Jupyter notebooks.
 │
-├── pyproject.toml     <- Project configuration file with package metadata for 
-│                         predict-pet-adoption and configuration for tools like black
+├── pyproject.toml     <- Project configuration file for tools like black
 │
 ├── environment.yml    <- The Conda configuration file for recreating the analysis environment.
-│                         Use the command `conda env create -f environment.yml` to install all necessary dependencies.
 │
 └── setup.cfg          <- Configuration file for flake8
 ```
 
-## Troubleshooting
+---
 
-If you encounter any issues during setup or execution, here are some common troubleshooting steps:
+## Français
 
-- **Environment Issues:** Ensure you activated the correct Conda environment using `conda activate predict-pet-adoption`.
-- **Package Installation:** If there were any issues installing dependencies, try running `make clean` and then `make requirements` again to reinstall the dependencies.
+### Prérequis
+
+Avant d'exécuter le projet, assurez-vous d'avoir installé les outils suivants :
+
+- **Conda** : Utilisé pour gérer l'environnement virtuel et les dépendances du projet.
+- **Git** : Pour cloner le dépôt.
+- **Make** : Pour exécuter les tâches définies dans le `Makefile`.
+- **Jupyter Notebook** : Pour exécuter les notebooks.
+
+### Configuration
+
+Suivez ces étapes pour configurer le projet :
+
+1. **Clonez le dépôt** :
+   ```bash
+   git clone https://github.com/yourusername/predict-pet-adoption.git
+   cd predict-pet-adoption
+   ```
+
+2. **Créez et activez l'environnement Conda** :
+   Vous devez créer un environnement Conda et installer toutes les dépendances nécessaires. Exécutez la commande suivante pour créer l'environnement :
+   ```bash
+   make create-environment
+   ```
+
+   Une fois l'environnement créé, activez-le avec :
+   ```bash
+   conda activate predict-pet-adoption
+   ```
+
+3. **Installez les dépendances** :
+   Après avoir activé l'environnement, installez toutes les dépendances nécessaires avec :
+   ```bash
+   make requirements
+   ```
+
+4. **Exécutez les Notebooks** :
+   Pour exécuter les notebooks pour l'exploration des données, la transformation et l'entraînement des modèles, exécutez :
+   ```bash
+   make run-notebooks
+   ```
+
+   Cela exécutera les notebooks suivants dans cet ordre :
+   - `1-data-exploration.ipynb`
+   - `2-data-transformation.ipynb`
+   - `3-model-training.ipynb`
+
+### Organisation du Projet
+
+```
+├── LICENSE            <- Licence open-source, si choisie
+├── Makefile           <- Makefile avec des commandes pratiques comme `make data` ou `make train`
+├── README.md          <- Le README principal pour les développeurs utilisant ce projet.
+├── data
+│   ├── processed      <- Le jeu de données final pour la modélisation.
+│   └── raw            <- Le jeu de données original et immuable.
+│
+├── docs               <- Un projet mkdocs par défaut ; consultez www.mkdocs.org pour plus de détails
+│
+├── notebooks          <- Notebooks Jupyter.
+│
+├── pyproject.toml     <- Fichier de configuration du projet pour des outils comme black
+│
+├── environment.yml    <- Fichier de configuration Conda pour recréer l'environnement d'analyse.
+│
+└── setup.cfg          <- Fichier de configuration pour flake8
+```
 
 ---
+
+## Português
+
+### Pré-requisitos
+
+Antes de executar o projeto, certifique-se de ter as seguintes ferramentas instaladas:
+
+- **Conda**: Usado para gerenciar o ambiente virtual e as dependências do projeto.
+- **Git**: Para clonar o repositório.
+- **Make**: Para executar as tarefas definidas no `Makefile`.
+- **Jupyter Notebook**: Para rodar os notebooks.
+
+### Configuração
+
+Siga os passos abaixo para configurar o projeto:
+
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/yourusername/predict-pet-adoption.git
+   cd predict-pet-adoption
+   ```
+
+2. **Crie e ative o ambiente Conda**:
+   Você precisa criar um ambiente Conda e instalar todas as dependências necessárias. Execute o seguinte comando para criar o ambiente:
+   ```bash
+   make create-environment
+   ```
+
+   Após criar o ambiente, ative-o com:
+   ```bash
+   conda activate predict-pet-adoption
+   ```
+
+3. **Instale as dependências**:
+   Após ativar o ambiente, instale todas as dependências necessárias usando:
+   ```bash
+   make requirements
+   ```
+
+4. **Execute os Notebooks**:
+   Para rodar os notebooks de exploração de dados, transformação e treinamento de modelo, execute:
+   ```bash
+   make run-notebooks
+   ```
+
+   Isso executará os seguintes notebooks na ordem:
+   - `1-data-exploration.ipynb`
+   - `2-data-transformation.ipynb`
+   - `3-model-training.ipynb`
+
+### Estrutura do Projeto
+
+```
+├── LICENSE            <- Licença open-source, se houver
+├── Makefile           <- Makefile com comandos como `make data` ou `make train`
+├── README.md          <- O README principal para desenvolvedores utilizando este projeto.
+├── data
+│   ├── processed      <- O conjunto final de dados para modelagem.
+│   └── raw            <- O conjunto de dados original imutável.
+│
+├── docs               <- Um projeto mkdocs por padrão; veja www.mkdocs.org para mais detalhes
+│
+├── notebooks          <- Notebooks Jupyter.
+│
+├── pyproject.toml     <- Arquivo de configuração do projeto para ferramentas como o black
+│
+├── environment.yml    <- O arquivo de configuração Conda para recriar o ambiente de análise.
+│
+└── setup.cfg          <- Arquivo de configuração para flake8
+```
