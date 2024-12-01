@@ -5,7 +5,7 @@ build-backend = "flit_core.buildapi"
 [project]
 name = "predict-pet-adoption"
 version = "0.0.1"
-description = "Final project for Techniques d'A"
+description = "Final project for Techniques d'Apprentissage Artificiel"
 authors = [
   { name = "caroline_guedes_lins" },
 ]
